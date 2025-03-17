@@ -4,9 +4,11 @@ import { Component } from "react";
 class Welcome extends Component{
 
     render(){
-        return <>
+        return (
+            <div>
             <h1>Welcome, Mentor</h1>
-        </>
+            </div>
+        )
     }
 
 }
