@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Greetings=({fn})=>{
-    const arr=["Aryan","Simon","Adi"];
+const Greetings=({name})=>{
+    // const arr=["Aryan","Simon","Adi"];
     return(
         <>
-        {<div>{ fn(arr)}</div>}
+        {<div>HI {name}</div>}
         </>
     )
 }

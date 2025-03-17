@@ -1,13 +1,15 @@
 import React, {useState} from 'react';
 import Greetings from './greetings';
+import Border from './Border';
+import Welcome from './Welcome';
 // // const Extra=()=>
-// // {
-// //     const [count, setCount] = useState(0);
-// //     return(
-// //         <div>
-// //             <h1>Practice</h1>
-// //             <p>Count: {count}</p>
-// //             <Buttons count={count} setCount={setCount}></Buttons>
+// // {v>
+//       <h2>Hello, {name}!</h2>const [count, setCount] = useState(0);
+//     </div>
+//   );   <div>
+// };             <h1>Practice</h1>
+// / //             <p>Count: {count}</p>
+// export default Greetings;ns count={count} setCount={setCount}></Buttons>
 // //         </div>
 // //     )
 // // }
@@ -48,16 +50,37 @@ import Greetings from './greetings';
 //   )
 // }
 
-const App=()=>{
-  return(
-    <div>
-    <Greetings fn={maps}></Greetings>
-    </div>
+
+
+// const App=()=>{
+//   return(
+//     <div>
+//     <Greetings fn={maps}></Greetings>
+//     </div>
+//   )
+// }
+// function maps(arr){
+//   return arr.map((item,index)=>(
+//     <Border>
+
+//     <div key={index}>Hi there {item}</div>
+//     </Border>
+//   ))  
+// }
+
+// const arr=["Aryan","Simon","Adi"];
+const App = () => {
+  return (
+    // <div>
+    //   {arr.map((item, index) => (
+    //     <Border key={index}>
+    //       <Greetings name={item} />
+    //     </Border>
+    //   ))}
+    // </div>
+    <Welcome/>
   )
 }
-function maps(arr){
-  return arr.map((item,index)=>(
-    <div key={index}>Hi there {item}</div>
-  ))  
-}
+
+
 export default App;
