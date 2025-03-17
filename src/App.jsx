@@ -78,7 +78,9 @@ const App = () => {
     //     </Border>
     //   ))}
     // </div>
-    <Welcome/>
+    <div>
+    <Welcome name="Kshitiz"/>
+    </div>
   )
 }
 
