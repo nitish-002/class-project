@@ -20,7 +20,17 @@ class Welcome extends Component{
     componentDidMount(){
         console.log("Mounted")
     }
+
+    componentWillUnmount(){
+
+        console.log("Unmounted");
+
+    }
+
+
     componentDidUpdate(prevProp,prevState){
+        console.log("Previous state: "+prevState.count)
+        console.log("current state: "+this.state.count)
         console.log("Updated")
 
     }

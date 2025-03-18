@@ -70,6 +70,13 @@ import Welcome from './Welcome';
 
 // const arr=["Aryan","Simon","Adi"];
 const App = () => {
+  const [show,setShow]=useState(true)
+
+
+  function changeShow(){
+    setShow(!show);
+  }
+
   return (
     // <div>
     //   {arr.map((item, index) => (
@@ -79,7 +86,8 @@ const App = () => {
     //   ))}
     // </div>
     <div>
-      <Welcome initial={5} step={5} limit={25} limit2={-25}/>
+      <button onClick={changeShow}>Change</button>
+      {show &&< Welcome initial={5} step={5} limit={25} limit2={-25}/>}
     </div>
   )
 }
