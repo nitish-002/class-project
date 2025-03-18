@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { preconnect } from "react-dom";
 
 
 class Welcome extends Component{
@@ -29,6 +30,7 @@ class Welcome extends Component{
 
 
     componentDidUpdate(prevProp,prevState){
+        console.log(prevProp)
         console.log("Previous state: "+prevState.count)
         console.log("current state: "+this.state.count)
         console.log("Updated")
