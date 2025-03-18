@@ -5,8 +5,30 @@ class Welcome extends Component{
     constructor(props){
         super(props);
         this.state={count:0}
-        
+        console.log("constructor")
     }
+
+    //5 lifecycle function
+    // constructor
+    // render
+    // Mount
+    // Unmount
+    // update
+
+
+
+    componentDidMount(){
+        console.log("Mounted")
+    }
+    componentDidUpdate(prevProp,prevState){
+        console.log("Updated")
+
+    }
+
+
+
+
+
     increment = () => { // no function keyword needed here
         this.setState({count:this.state.count+this.props.step})
     }
@@ -17,6 +39,7 @@ class Welcome extends Component{
 
     }
     render(){
+        console.log("renered")
         return (
             <div>
             {/* <h1>Welcome, {this.props.name}</h1> */}

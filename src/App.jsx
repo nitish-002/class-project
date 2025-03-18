@@ -79,7 +79,7 @@ const App = () => {
     //   ))}
     // </div>
     <div>
-    <Welcome initial={5} step={5} limit={25} limit2={-25}/>
+      <Welcome initial={5} step={5} limit={25} limit2={-25}/>
     </div>
   )
 }
