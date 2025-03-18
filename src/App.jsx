@@ -79,7 +79,7 @@ const App = () => {
     //   ))}
     // </div>
     <div>
-    <Welcome name="Kshitiz"/>
+    <Welcome initial={5} step={5} limit={25} />
     </div>
   )
 }
