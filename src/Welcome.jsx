@@ -14,7 +14,7 @@ class Welcome extends Component{
         this.setState({count:this.state.count-this.props.step})
     }
     alertfunction =()=>{
-        alert("Can't go further")
+
     }
     render(){
         return (
