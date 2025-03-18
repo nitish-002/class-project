@@ -21,8 +21,8 @@ class Welcome extends Component{
             <div>
             {/* <h1>Welcome, {this.props.name}</h1> */}
             <h1>{this.state.count}</h1>
-            <button onClick={this.props.limit?this.increment:this.alertfunction}>+</button>
-            <button onClick={this.props.limit? this.decrement:this.alertfunction}>-</button>
+            <button onClick={this.state.count<this.props.limit?this.increment:this.alertfunction}>+</button>
+            <button onClick={this.state.count>this.props.limit2? this.decrement:this.alertfunction}>-</button>
             </div>
         )
     }
